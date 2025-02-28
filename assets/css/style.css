@@ -736,7 +736,7 @@
   
   .navbar-text { margin-block: 10px; }
   
-  .navbar .body-4 { color: var(--quick-silver); }
+  .navbar .body-4 { color: var(--); }
   
   .sidebar-link { transition: var(--transition-1); }
   
