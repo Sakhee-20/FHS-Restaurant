@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Fortune Hospitatlity Services</title>
+  <meta name="title" content="Fortune Hospitatlity Services">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/IMG_9191.JPG">
+  <link rel="preload" as="image" href="./assets/images/IMG_0968.jpg">
+  <link rel="preload" as="image" href="./assets/images/IMG_9218.JPG">
+  <script>
+    async function handleSubmit(event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+            });
+
+            if (response.ok) {
+                form.reset();
+                alert("Form submitted successfully!");
+            } else {
+                alert("There was a problem with the submission. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("There was a problem with the submission. Please try again.");
+        }
+    }
+</script>
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">FHS</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar" style="background-color: gray; position:fixed;">
+    <div class="container">
+      <a href="https://maps.app.goo.gl/EhA4iin4YuTSdHsL8">
+      <address class="topbar-item" style="margin-left: -180px;">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          1201 – Mars, Rajhans Campus, Opp. Rajhans Cinema, Pal Hazira Road, Surat – 395009, Gujarat, India
+        </span>
+      </address>
+    </a>
+      <div class="separator"></div>
+      
+      <a href="tel:+919879555976" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span"> +91-9879555976</span>
+      </a>
+      <div class="separator"></div>
+      
+      <a href="tel:+918208002172" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+      <span class="span">+91-8208002172 </span>
+    </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:fortunehs99@gmail.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">fortunehs99@gmail.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header style="color: gray;">
+    <div class="container">
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo-2.png" width="100" height="50" alt="">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo-2.png" width="100" height="50" alt="">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span" style="color: rgb(228, 197, 144); font-size: 14px; font-weight: 700; font-family: Libre Baskerville, serif;">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#Business" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span" style="color: rgb(228, 197, 144); font-size: 14px; font-weight: 700; font-family: Libre Baskerville, serif;">Business Areas</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./aboutus.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span" style="color: rgb(228, 197, 144); font-size: 14px; font-weight: 700; font-family: Libre Baskerville, serif;">About Us</span>
+            </a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="./aboutus.html#Strength" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span" style="color: rgb(228, 197, 144); font-size: 14px; font-weight: 700; font-family: Libre Baskerville, serif;">clientele</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#Contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span" style="color: rgb(228, 197, 144); font-size: 14px; font-weight: 700; font-family: Libre Baskerville, serif;">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            1201 – Mars, Rajhans Campus, Opp. Rajhans Cinema, Pal Hazira Road, Surat – 395009, Gujarat, India
+          </address>
+
+          <a href="mailto:fortunehs99@gmail.com" class="body-4 sidebar-link">fortunehs99@gmail.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Contact</p>
+
+          <a href="tel:+91-9879555976" class="body-1 contact-number hover-underline">
+            +91-9879555976
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="./carrers.html" class="btn btn-secondary">
+        <span class="text text-1">Careers</span>
+
+        <span class="text text-2" aria-hidden="true">Careers</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+      
+          <li class="slider-item active" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/IMG_0968.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <p class="label-2 section-subtitle slider-reveal">Fortune Hospitality Services</p>
+           
+            <h1 class="display-1 hero-title slider-reveal" >
+              Catering to Perfection,<br> Everytime
+            </h1>
+          </li>
+      
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/IMG_9191.JPG" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <p class="label-2 section-subtitle slider-reveal">Fortune Hospitality Services</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              Where Flavours means <br> Hospitality
+            </h1>
+          </li>
+      
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/IMG_9218.JPG" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <p class="label-2 section-subtitle slider-reveal">Fortune Hospitality Services</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              Catering with Passion <br> Serving with Pride
+            </h1>
+          </li>
+      
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/IMG_9187.JPG" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <p class="label-2 section-subtitle slider-reveal">Fortune Hospitality Services</p>
+            <h1 class="display-1 hero-title slider-reveal" >
+              The art of Catering <br> Perfected.
+            </h1>
+          </li>
+      
+        </ul>
+      
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+      
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+      
+        <a href="#Contact" class="hero-btn has-after">
+          <span class="text text-2">Contact Us</span>
+        </a>
+      
+      </section>
+      
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about" >
+        <div style="margin-top: -80px;">
+          <p class="section-subtitle label-2">Behind the Success</p>
+
+          <h2 class="headline-1 section-title">Director's Message</h2>
+        </div>
+        <div class="container">
+          
+          
+          <div class="about-content" style="margin-top: 100px;">
+
+            <!-- <p class="label-2 section-subtitle" id="about-label">Our Story</p> -->
+
+            <h2 class="headline-1 section-title">DAYANAND SHETTY</h2>
+
+            <p style="color:hsl(35, 31%, 69%)">
+                At <strong style="color:#f2f2e9;">FORTUNE HOSPITALITY SERVICES</strong>, we're passionate about delivering exceptional hospitality experiences. Our team's dedication to excellence has earned us a reputation for reliability and quality. With years of combined experience and a passion for excellence, we bring a level of sophistication and expertise to every project. From concept to execution, we're committed to precision, creativity, and flawless delivery."We're proud to have built long-lasting relationships with our clients, and we look forward to continuing to exceed their expectations." Our clients are more than just partners - they're part of our family."
+            </p>
+
+            <!-- <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+80 (400) 123 4567</a> -->
+
+            
+
+          </div>
+
+          <figure class="about-banner" style="margin-top: 100px; width: 500px; height: 500px;">
+
+            <img src="./assets/images/Director-1.png" width="470" height="470" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <!-- <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure> -->
+
+          <!-- <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape"> -->
+
+        </div>
+      </section>
+
+      
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about" style="margin-top:-180px ; margin-bottom: -90px;">
+        <div class="container">
+
+          <div class="about-content">
+
+            <!-- <p class="label-2 section-subtitle" id="about-label">Our Story</p> -->
+
+            
+            <h2 class="headline-1 section-title" style="margin-left: 700px;">HARISH SHETTY</h2>
+
+            <p class="section-text" style="margin-left: 700px; width: 420px;color:hsl(35, 31%, 69%);">
+                "Our partnership is built on a foundation of trust, expertise, and a shared vision for hospitality excellence. We're committed to providing personalized services that meet the unique needs of each client. "At FORTUNE, we're proud of our team's relentless pursuit of excellence. Our hospitality professionals are masters of their craft, with a deep understanding of what it takes to create unforgettable experiences. We're committed to staying at the forefront of industry trends and best practices, ensuring that our clients receive cutting-edge solutions that drive results.""With our combined expertise and passion for hospitality, we're confident in our ability to deliver outstanding results and drive success for our clients."
+            </p>
+
+            <!-- <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+80 (400) 123 4567</a> -->
+
+            
+
+          </div>
+
+          <figure class="about-banner" style="width: 550px; height: 550px; margin-left: -1200px; padding-right: 120px;">
+
+            <img src="./assets/images/Director-2.png" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <!-- <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+          -->
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+      
+
+
+      
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Our Specialities</p>
+
+          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+          <!-- <p class="section-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
+            standard dummy text ever.
+          </p> -->
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/cuisines/13.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Breakfast</a>
+                  </h3>
+                </div>
+              
+                
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/cuisines/12.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Appetizers</a>
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/cuisines/15.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Drinks</a>
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+      <!--- #BUSINESS AREAS --->
+      
+<section class="section menu" aria-label="menu-label" id="Business">
+    <div class="container">
+  
+      <p class="section-subtitle text-center label-2">Our Expertise</p>
+  
+      <h2 class="headline-1 section-title text-center">Business Areas</h2>
+          <ul class="grid-list1">
+      
+            <!-- Strength 1 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal1')">
+                <div class="card-icon">
+                  <img src="./assets/images/catering (1).png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Food & Catering</h3>
+                <p class="label-1 card-text">Click to read more about our Food & Catering services.</p>
+              </div>
+            </li>
+      
+            <!-- Strength 2 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal2')">
+                <div class="card-icon">
+                  <img src="./assets/images/insecticide.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Pest Control</h3>
+                <p class="label-1 card-text">Click to read more about our Management services.</p>
+              </div>
+            </li>
+      
+            <!-- Strength 3 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal3')">
+                <div class="card-icon">
+                  <img src="./assets/images/maid.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Housekeeping</h3>
+                <p class="label-1 card-text">Click to read more about our Housekeeping services.</p>
+              </div>
+            </li>
+      
+            <!-- Strength 4 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal4')">
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Event Organization
+</h3>
+                <p class="label-1 card-text">Click to read more about our Event Organization
+ services.</p>
+              </div>
+            </li>
+      
+            <!-- Strength 5 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal5')">
+                <div class="card-icon">
+                  <img src="./assets/images/catering.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Industrial Catering</h3>
+                <p class="label-1 card-text">Click to read more about our Industrial Catering services.</p>
+              </div>
+            </li>
+      
+            <!-- Strength 6 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal6')">
+                <div class="card-icon">
+                  <img src="./assets/images/hotel.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Guest House Management</h3>
+                <p class="label-1 card-text">Click to read more about our Guest House Management services.</p>
+              </div>
+            </li>
+      
+            <!-- Strength 7 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal7')">
+                <div class="card-icon">
+                  <img src="./assets/images/pantry.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Pantry Services</h3>
+                <p class="label-1 card-text">Click to read more about our Pantry Services.</p>
+              </div>
+            </li>
+      
+            <!-- Strength 8 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal8')">
+                <div class="card-icon">
+                  <img src="./assets/images/cooler.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Laundry Services</h3>
+                <p class="label-1 card-text">Click to read more about our Laundry Services.</p>
+              </div>
+            </li>
+      
+            <!-- Strength 9 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal9')">
+                <div class="card-icon">
+                  <img src="./assets/images/canteen.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Educational & Hospital Canteen</h3>
+                <p class="label-1 card-text">Click to read more about our Educational & Hospital Canteen services.</p>
+              </div>
+            </li>
+      
+            <!-- Strength 10 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal10')">
+                <div class="card-icon">
+                  <img src="./assets/images/hostel.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Hostel Management</h3>
+                <p class="label-1 card-text">Click to read more about our Hostel Management services.</p>
+              </div>
+            </li>
+      
+            <!-- Strength 11 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal11')">
+                <div class="card-icon">
+                  <img src="./assets/images/engineer.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Manpower Support
+</h3>
+                <p class="label-1 card-text">Click to read more about our Manpower Support
+ services.</p>
+              </div>
+            </li>
+      
+            <!-- Strength 12 -->
+            <li class="feature-item">
+              <div class="feature-card" onclick="openModal('modal12')">
+                <div class="card-icon">
+                  <img src="./assets/images/processing.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+                <h3 class="title-2 card-title">Materials Supply</h3>
+                <p class="label-1 card-text">Click to read more about our Materials Supply services.</p>
+              </div>
+            </li>
+      
+          </ul>
+      
+          <!-- Decorative elements -->
+          <!-- <img src="./assets/images/shape-7.png" style="z-index: 1;" width="208" height="178" loading="lazy" alt="shape" class="shape shape-1"> -->
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape" class="shape shape-2">
+      
+        </div>
+      </section>
+      
+      <!-- Modals -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <h2>Food & Catering</h2>
+          <p>Fortune Hospitality Services has a team of chefs, cooks, and hygienists who ensure that meals are cooked in a scientific fashion adhering to the highest standards of hygiene and sanitation.</p>
+        </div>
+      </div>
+      
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <h2>Protecting Your Space, Ensuring Your Peace of Mind</h2>
+
+          <p>At Fortune Hospitality Services (FHS), we understand the importance of effective pest control in safeguarding your property, health, and well-being. Our comprehensive pest control services are designed to identify, manage, and eliminate pest infestations, ensuring a clean, safe, and pest-free environment.</p><br>
+          <h3>Our Proven Pest Control Process</h3>
+          <p>1. <strong>Thorough Inspection:</strong> Our experts inspect your property for signs of pests, identifying potential entry points and vulnerable areas.
+          <br>2. <strong>Pest Identification:</strong> We accurately identify the pest species, understanding their behavior, habits, and weaknesses.
+          <br>3. <strong>Sealing Entry Points:</strong> We seal all entry points, preventing re-infestation and ensuring a pest-free environment.
+          <br>4. <strong>Removing Attractants:</strong> We eliminate food and water sources, removing attractants that draw pests to your property.
+          <br>5. <strong>Targeted Treatments:</strong> We use traps, repellents, or pesticides (if necessary) to eliminate the pest infestation, ensuring minimal disruption to your daily life.
+          <br>6. <strong>Ongoing Monitoring:</strong> Our experts monitor your property for signs of re-infestation, ensuring prompt action to prevent future occurrences.
+          <br>7. <strong>Maintaining Cleanliness:</strong> We emphasize the importance of maintaining cleanliness and hygiene, providing guidance on preventing pest infestations.
+            </p>
+            <br>
+            <h3>Trust FHS for Effective Pest Control</h3>
+            <P>By choosing FHS, you can expect:<br>
+              - Effective elimination of pest infestations<br>
+              - Prevention of future occurrences<br>
+              - Protection of your property and health<br>
+              - Minimal disruption to your daily life<br>
+              - Ongoing support and guidance<br>
+              Contact us today to schedule your pest control service and enjoy a pest-free environment!
+              </P>
+        </div>
+      </div>
+      
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <h2>Housekeeping & Maintenance Activities</h2>
+          <p><strong>Expert Care for Your Space</strong>
+            <br>At Fortune Hospitality Services (FHS), we recognize the vital importance of a pristine, secure, and well-maintained environment for your home or business. Our comprehensive housekeeping and maintenance services ensure that every aspect of your property receives meticulous attention, from precision cleaning and polishing to expert repairs and renovations
+            </p>
+            <h3>Unparalleled Expertise</h3>
+            <p>With years of experience perfecting the art of keeping spaces immaculate and secure, our team of seasoned professionals is dedicated to delivering exceptional service and upholding the highest standards.</p>
+            <br>
+            <h3>Our Customized Services:</h3>
+            <ol>
+              <li>1. Personalized housekeeping services tailored to your unique needs and schedule</li>
+              <li>2. Thorough and meticulous cleaning, dusting, and polishing to create a spotless environment</li>
+              <li>3. Expert maintenance and repair services for fixtures, appliances, and more to ensure seamless functionality</li>
+                <li>4. Seasonal deep cleaning and organization to revitalize your space</li>
+                  <li>5. Special event cleaning and preparation to make your events unforgettable
+                </li>
+            </ol>
+            <br>
+            <h3>Experience the FHS Difference</h3>
+            <p>
+              By entrusting your housekeeping and maintenance needs to FHS, you can expect:<br>
+              <ol>
+                <li>1. Unparalleled attention to detail and commitment to excellence</li>
+                <li>2. Enhanced property value and aesthetic appeal</li>
+                <li>3. Improved safety and security through proactive maintenance</li>
+                  <li>4. Increased efficiency and productivity through customized services                  </li>
+                    <li>5. Unwavering dedication to your satisfaction and peace of mind</li>
+              </ol>
+              <br>
+              Discover how our expert housekeeping and maintenance services can transform your space. Contact us today to learn more.
+            </p>
+          </div>
+      </div>
+      
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal4')">&times;</span>
+          <h2>Elevating Your Events to Unforgettable Heights</h2>
+          <p>At Fortune Hospitality Services (FHS), we specialize in crafting extraordinary experiences that leave a lasting impression. Our comprehensive facility and event organization services provide a tailored, stress-free solution for all your event needs, from concept to execution.</p>
+          <br>
+          <h3>Expertise Redefined</h3>
+          <p>
+            With decades of experience in event management, our team of skilled professionals has perfected the art of delivering exceptional events that exceed expectations. We offer personalized support, meticulous attention to detail, and an unwavering commitment to excellence.
+          </p>
+          <br>
+          <h3>Comprehensive Services</h3>
+          <p>- Venue Selection and Management: Finding the perfect fit for your event
+            <br>- Event Concept and Design: Bringing your vision to life
+           <br> - Logistics and Coordination: Seamless execution from start to finish
+            <br>- Catering and Hospitality: Exceptional cuisine and service
+            <br>- Audiovisual and Technical Support: State-of-the-art equipment and expertise
+            <br>- Event Marketing and Promotion: Maximizing your event's reach and impact
+            </p>
+            <h3>Elevate Your Events with FHS</h3>
+            <p>
+              By partnering with us, you'll enjoy:<br>
+- Unforgettable events that exceed expectations<br>
+- Stress-free planning and execution<br>
+- Personalized support and attention to detail<br>
+- Access to state-of-the-art equipment and expertise<br>
+- Maximized event impact and reach<br>
+Discover how our exceptional facility and event organization services can elevate your events to new heights. Contact us today!
+
+            </p>
+        </div>
+      </div>
+      
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal5')">&times;</span>
+          <h2>Industrial Catering: Fueling Productivity</h2>
+          <p>We understand that a well-nourished workforce is a productive and happy one. Our industrial catering services are tailored to meet the unique needs of your industry, whether it's manufacturing, construction, or beyond. With 12 years of experience serving industries like yours, we've perfected the art of delivering dependable, high-quality catering solutions that enhance morale and productivity. Our team of skilled chefs and catering experts collaborate closely with you to craft customized menus that cater to your specific requirements and preferences.
+          <br>
+          <strong>Our industrial catering services include: </strong><br>
+1. Personalized menus to suit your workforce's tastes and dietary needs<br>
+2. Consistent and reliable service to ensure seamless operations <br>
+3. Specialized catering for remote or hard-to-reach locations <br>
+4. Flexible pricing plans to accommodate your budget<br>
+5. Special dietary accommodations for employees with specific requirements<br>
+6. Environmentally friendly practices to minimize our carbon footprint <br>
+<strong>At FHS, we're dedicated to providing exceptional industrial catering services that surpass your expectations.</strong><br>
+</p>
+        </div>
+      </div>
+      
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal6')">&times;</span>
+          <h2>Guest House Management: Your Home Away from Home and Partner in Exceptional Hospitality</h2>
+          <p>At Fortune Hospitality Services, we transform your guest house into a warm and inviting haven. Our comprehensive management services ensure that every detail, from comfortable accommodations to delectable cuisine and outstanding service, is meticulously attended to.</p>
+          <p><strong>Our guest house management services include:</strong>
+          <br>
+        1. Tailored guest services to ensure a warm and welcoming experience
+        <br> 2. Gourmet meals and refreshments to delight every palate
+        <br> 3. Immaculate housekeeping and maintenance for a comfortable and relaxing environment
+        <br> 4. Efficient day-to-day operations management to maximize your property's potential
+        <br> 5. Customized solutions to fit your unique needs and goals.
+        </p>
+        <br> 
+        <strong>Our Commitment:</strong><br>
+        <p>At Fortune Hospitality Services, we're committed to delivering exceptional hospitality services that surpass your expectations. Trust us to create unforgettable experiences that nourish both body and soul.
+          Contact us today to learn more about our comprehensive solutions.
+          </p>
+        </div>
+      </div>
+      
+      <div id="modal7" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal7')">&times;</span>
+          <h3>Stocking Your Pantry with Care</h3>
+          <h2>Our Services</h2>
+          <p>Customized pantry stocking to meet your unique needs and preferences
+            Fresh and healthy snack options to fuel productivity and satisfaction
+            Convenient and flexible delivery schedules to fit your busy lifestyle
+            Expert pantry organization and maintenance to maximize space and efficiency
+            Cost-effective solutions to save you time & money.
+            Pantry Services.</p><br>
+        <h2>Expertly Managed Pantry Solutions for Enhanced Productivity</h2>
+        <p>At Fortune Hospitality Services (FHS), we recognize the critical importance of a well-stocked pantry in supporting the well-being and productivity of individuals and organizations. Our comprehensive pantry services are designed to provide a convenient, cost-effective, and tailored solution for maintaining a fully stocked and organized pantry.</p>
+        <br><h4>Our Expertise</h4>
+        <p>With extensive experience in pantry management, our team of skilled professionals is dedicated to delivering exceptional service, ensuring that your pantry is always stocked with fresh, healthy, and delicious options.</p>
+        <br><h4>Our Pantry Services Include:</h4>
+        <p>1. Customized pantry stocking tailored to your unique needs and preferences
+        <br>2. Fresh and healthy snack options carefully selected to fuel productivity and satisfaction
+        <br>3. Flexible and convenient delivery schedules designed to accommodate your busy lifestyle
+        <br>4. Expert pantry organization and maintenance to optimize space and efficiency
+        <br>5. Cost-effective solutions designed to save you time and resources
+          </p>
+        <br><h4>Benefits of Partnering with FHS</h4>
+          <p>By entrusting your pantry management to FHS, you can expect:<br>
+
+          1. Enhanced productivity and job satisfaction
+          <br>2. Reduced stress and administrative burdens
+          <br>3. Improved pantry organization and efficiency
+          <br>4. Access to fresh, healthy, and delicious snack options
+          <br>5. Cost savings through our efficient solutions
+            </p>
+          <br><p>Discover how our expertly managed pantry services can support your organization's success. Contact us today to learn more.</p>
+        </div>
+      </div>
+      
+      <div id="modal8" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal8')">&times;</span>
+          <h2>Expert Care for Your Garments</h2>
+          <br>
+          <p>At Fortune Hospitality Services (FHS), we recognize the significance of immaculately clean clothes for your daily life. Our comprehensive laundry services offer a convenient, reliable, and tailored solution for all your laundry needs, from washing and drying to folding and ironing.</p>
+          <h3>Our Customized Laundry Services:</h3>
+          <p>1. Personalized laundry plans designed to fit your unique needs and schedule
+            <br>2. Comprehensive wash, dry, fold, and iron services for all types of clothing and fabrics
+            <br>3. Specialized care for delicate, woolen, and special-care items
+            <br>4. Expert stain removal and spotting services
+            <br>5. Fresh and clean linen supply for homes and businesses
+              </p>
+              <br>
+            <h3>Experience the FHS Difference</h3>
+            <p>By entrusting your laundry needs to FHS, you can expect:<br>
+
+              1. Unparalleled attention to detail and commitment to excellence
+              <br>2. Convenient and reliable service tailored to your schedule
+              <br>3. Gentle care for your garments to ensure longevity
+              <br>4. Immaculate cleaning and finishing to enhance your wardrobe
+              <br>5. Peace of mind knowing your laundry is in expert hands
+                </p>
+              <p>Discover how our expert laundry services can simplify your life. Contact us today to learn more.
+              </p>
+        </div>
+      </div>
+      
+      <div id="modal9" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal9')">&times;</span>
+          <h2>Educational Canteen: Fuelling Academic Excellence & Nourishing Young Minds</h2> <br>
+
+          <p>At Fortune Hospitality Services, we believe that nourishing young minds is essential for academic success. Our educational canteen services provide wholesome, delicious meals that support students' growth, development, and learning. With 15 years of experience serving educational institutions, we understand the unique needs of students, teachers, and staff. Our culinary experts craft customized menus that cater to diverse dietary requirements, preferences, and cultural backgrounds.
+</p>
+<br>
+<p><strong>Our educational canteen services include:</strong>
+<br>
+1. Tailored meal plans for students, teachers, and staff <br>
+2. Nutritious food options to enhance cognitive function and academic performance
+<br>
+3. Special dietary accommodations for students with specific needs <br>
+4. Efficient service to fit busy school schedules <br>
+5. Flexible pricing plans to suit your budget <br>
+</p>
+<br>
+<h2>Hospital Canteen: Comforting Your Body & Soul</h2>
+<br>
+<p>
+  We recognize the vital role that nutritious meals play in the healing process. Our hospital canteen services provide healthy, comforting food options that support patient recovery, staff well-being, and visitor satisfaction. With 7 years of experience serving hospitals, we understand the unique needs of patients, staff, and visitors. Our culinary experts create customized menus that meet diverse dietary requirements, preferences, and cultural backgrounds.
+</p><br>
+<p><strong>Our hospital canteen services include:</strong>
+<br>
+1. Customized meal plans for patients, staff, and visitors
+<br>2.  Nutritious food options to support recovery, comfort, and well-being
+<br>3. Special dietary accommodations for patients with specific needs
+<br>4. Efficient service to fit busy hospital schedul
+<br>5. Flexible pricing plans to suit your budget
+<br>
+With years of expertise in perfecting the art of hospitality, our team of seasoned professionals is dedicated to crafting a home away from home experience for your guests. We understand the importance of exceeding expectations and strive to deliver personalized services that make every stay unforgettable.
+</p>
+        </div>
+      </div>
+      
+      <div id="modal10" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal10')">&times;</span>
+          <p><i><quote>Effective hostel management involves creating a safe, comfortable, and inclusive environment for residents</quote><br>
+          Key aspects include:<br>
+          1. Room allocation and maintenance <br>
+          2. Meal planning and provision <br>
+          3. Security and supervision <br>
+          4. Conflict resolution and counseling <br>
+          5. Communication with parents/guardians <br>
+          6. Ensuring cleanliness and hygiene <br>
+          7. Organizing recreational activities <br>
+          8. Managing finances and resource <br>
+        </i>
+        </p><br>
+        <h2>Hostel Management: Creating a Home Away from Home</h2>
+        <p>At FHS, we understand that a well-managed hostel is more than just a place to stay – it's a community, a sanctuary, and a launching pad for new experiences. Our comprehensive hostel management services are designed to create a safe, comfortable, and inclusive environment that makes our residents feel right at home.</p>
+        <h3>Our Holistic Approach</h3>
+          <p>We believe that effective hostel management involves attending to every aspect of our residents' lives. Here are the key areas we focus on: <br>
+            1. Room Allocation and Maintenance: We ensure that rooms are assigned efficiently and maintained to the highest standards, providing a clean, comfortable, and peaceful space for our residents to rest and recharge.
+          <br>2. Nourishing Meals: Our meal planning and provision services cater to diverse tastes and dietary needs, providing nutritious and delicious meals that fuel our residents' minds and bodies.
+          <br>3. Safety and Security: We prioritize our residents' safety and security, implementing robust measures and providing 24/7 supervision to ensure their well-being.
+          <br>4. Support and Guidance: Our experienced team offers guidance and support to our residents, helping them navigate challenges, resolve conflicts, and achieve their goals.
+          <br>5. Communication: We keep our residents' parents/guardians informed about their child's well-being, progress, and any concerns, ensuring that everyone is on the same page.
+          <br>6. Cleanliness and Hygiene: We maintain impeccable cleanliness and hygiene standards throughout the hostel, ensuring a healthy and comfortable environment for all.
+          <br>7. Recreational Activities: We organize engaging activities and events that promote socialization, relaxation, and personal growth, helping our residents create unforgettable memories.
+          <br>8. Financial Management: Our efficient financial management systems ensure transparency and accountability, giving our residents and their parents/guardians peace of mind.
+          <br>
+          <p><strong>Our Promise: </strong>
+          <br>
+          At FHS, we're committed to providing exceptional hostel management services that prioritize our residents' comfort, safety, and well-being. Our experienced team works tirelessly to create a warm and inclusive community, making our hostel a home away from home.
+        </p>
+            </p>
+        </div>
+      </div>
+      
+      <div id="modal11" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal11')">&times;</span>
+          <h2>Unlock Your Workforce Potential</h2>
+          <p>At Fortune Hospitality Services (FHS), we recognize that the right people are the driving force behind every successful organization. Our manpower support services are designed to empower your workforce, providing flexible and tailored solutions that align with your unique goals and objectives.</p><br>
+          <h3>Expertise That Delivers</h3>
+          <P>
+            With extensive experience in workforce management, our team of experts has developed a profound understanding of the complexities involved in building and maintaining a high-performing team. We're dedicated to delivering personalized support to help you: <br>
+- Augment your workforce with top talent<br>
+- Streamline staffing processes for enhanced efficiency<br>
+- Develop and retain top performers through targeted training<br>
+- Optimize productivity and efficiency<br>
+          </P>
+          <br>
+          <h3>Comprehensive Services</h3>
+          <p>
+          1. Flexible staffing solutions: temporary, contract, and permanent placements <br>
+2. Specialized recruitment and selection services <br>
+3. Comprehensive workforce management <br>
+4. Customized training and development programs <br>
+5. Strategic workforce planning <br>
+          </p>
+          <br>
+          <h3>Unlock Your Workforce Potential</h3>
+          <p>By partnering with FHS, you'll gain access to:<br>
+            - Expert guidance on workforce optimization<br>
+            - Increased efficiency and productivity<br>
+            - Enhanced employee engagement and retention<br>
+            - Improved business agility and responsiveness<br>
+            - Tailored solutions that meet your unique needs<br>
+            Discover how our manpower support services can empower your workforce and drive business success. Contact us today!
+            </p>
+        </div>
+      </div>
+      
+      <div id="modal12" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal12')">&times;</span>
+          <h2>Materials Supply</h2>
+          <h3>Building Excellence, Together.</h3>
+          <p>At Fortune Hospitality Services (FHS), we understand that top-notch materials are the backbone of any successful project. That's why we've crafted a comprehensive materials supply service designed to streamline your experience, ensuring timely completion and unparalleled quality.</p>
+       <br>
+       <h3>Unmatched Expertise</h3>
+       <p>With years of experience serving contractors, builders, and homeowners, our team has perfected the art of delivering exceptional service and tailored solutions. Our knowledgeable experts are dedicated to helping you bring your vision to life.</p>
+       <br><h3>Comprehensive Services</h3>
+       <p>- <strong> Premium Materials:</strong> Extensive range of high-quality materials to meet your project needs
+        <br>- <strong>Prompt Delivery:</strong> Timely delivery to ensure your project stays on track
+        <br>- <strong>Expert Guidance:</strong> Personalized advice on material selection and specification
+        <br>- <strong>Custom Solutions:</strong> Special orders and custom materials available to meet your unique needs
+        <br>- <strong>Competitive Pricing:</strong> Flexible payment options and competitive pricing to fit your budget
+        </p>
+        <br>
+        <h3>Your Partner in Building Excellence</h3>
+        <p>
+          At FHS, we're committed to empowering your project's success. Contact us today to discover how our exceptional materials supply services can help you: <br>
+- Streamline your project timeline<br>
+- Enhance your project's quality and aesthetic appeal<br>
+- Reduce costs and improve budget efficiency <br>
+- Access expert guidance and support<br>
+Let's build something amazing together!
+
+        </p>     
+      </div>
+      </div>
+      
+      
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center">
+        <div class="container">
+            <div class="quote-slider">
+                <div class="quote active">
+                    <div class="quote-mark">”</div>
+                    <p class="headline-2 testi-text">
+                      Where flavours means Hospitality
+                    </p>
+                </div>
+                <div class="quote">
+                    <div class="quote-mark">”</div>
+                    <p class="headline-2 testi-text">
+                      Catering With Heart, "Serving with Soul"
+                    </p>
+                </div>
+                <div class="quote">
+                    <div class="quote-mark">”</div>
+                    <p class="headline-2 testi-text">
+                      Where Every Meal is a Masterpiece.
+                    </p>
+                </div>
+                <div class="quote">
+                  <div class="quote-mark">”</div>
+                  <p class="headline-2 testi-text">
+                    A pinch of Passion, A Dash of Perfection
+                  </p>
+              </div>
+              <div class="quote">
+                <div class="quote-mark">”</div>
+                <p class="headline-2 testi-text">
+                  The art of Catering Perfected
+                </p>
+            </div>
+            <div class="quote">
+              <div class="quote-mark">”</div>
+              <p class="headline-2 testi-text">
+                Catering with Passion, Serving with Pride
+              </p>
+          </div>
+          <div class="quote">
+            <div class="quote-mark">”</div>
+            <p class="headline-2 testi-text">
+              Catering that exceeds expectations, everytime
+            </p>
+        </div>
+            </div>
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation" id="Contact">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="https://formsubmit.co/ojaswavarshney27@gmail.com" method="POST" class="form-left" onsubmit="handleSubmit(event)">
+              <h2 class="headline-1 text-center">Send us a message</h2>
+              <p class="form-text text-center">
+                  or call us at <a href="tel:+918208002172" class="link">+91-8208002172 </a> or <a href="tel:+919879555976" class="link">+91-9879555976 </a>
+              </p>
+      
+              <div class="input-wrapper">
+                  <!-- <input type="hidden" name="access_key" value="5a888596-9305-48c1-a715-3fe0cc23a7c4"> -->
+                  <input type="hidden" name="subject" value="Someone Contact you on Website">
+                  <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field" required>
+                  <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" required>
+              </div>
+      
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field" required></textarea>
+      
+              <button type="submit" class="btn btn-secondary">
+                  <span class="text text-1">Send</span>
+                  <span class="text text-2" aria-hidden="true">Send</span>
+              </button>
+          </form>
+
+            <div class="form-right text-center" style="background-color: #474643;">
+
+              <h2 class="headline-1 text-center" style="color: white; margin-top: 60px;">Contact Us</h2>
+
+              <!-- <p class="contact-label">Booking Request</p> -->
+              <p class="contact-label">Mobile</p>
+
+              <a href="tel:+88123123456" class="body-1 contact-number hover-underline" style="color: white; font-size:large;">+91-9879555976</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Location</p>
+
+              <address class="body-4" style="color: rgb(241, 241, 241);">
+                1201 – Mars, Rajhans Campus, Opp. Rajhans Cinema, Pal Hazira Road, Surat – 395009, Gujarat, India
+              </address>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+
+
+
+ 
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
